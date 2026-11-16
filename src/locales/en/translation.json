@@ -1,0 +1,78 @@
+
+{
+  "brand": "Sarah's Women's Clinic",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "health": "Women's Health",
+    "resources": "Patient Resources",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "WOMEN'S HEALTH & WELLBEING",
+    "heading": "Your health deserves",
+    "highlight": "care, dignity and understanding.",
+    "description": "Explore thoughtful, accessible information about women's health and reproductive wellbeing in a private, respectful environment.",
+    "primary": "Explore Health Resources",
+    "secondary": "Contact Our Team",
+    "note": "A more informed approach to women's wellbeing."
+  },
+  "intro": {
+    "eyebrow": "WELCOME TO SARAH'S",
+    "heading": "A more thoughtful approach to women's health.",
+    "description": "Every woman deserves access to clear health information, respectful communication and the confidence to make informed decisions about her wellbeing.",
+    "link": "Discover Our Approach"
+  },
+  "values": {
+    "eyebrow": "WHAT MATTERS TO US",
+    "heading": "Care begins with understanding.",
+    "privacy": "Privacy & Respect",
+    "privacyText": "We believe conversations about women's health should be approached with discretion, dignity and respect.",
+    "education": "Informed Choices",
+    "educationText": "Clear, responsible health information helps women understand their options and ask informed questions.",
+    "compassion": "Compassionate Communication",
+    "compassionText": "Women's health deserves thoughtful language, empathy and an environment free from judgement."
+  },
+  "resources": {
+    "eyebrow": "EXPLORE OUR INFORMATION",
+    "heading": "Knowledge for every stage of wellbeing.",
+    "description": "Explore our developing collection of women's health and reproductive health educational resources.",
+    "women": "Women's Health",
+    "womenText": "General information about women's wellbeing, health awareness and preventive care.",
+    "reproductive": "Reproductive Health",
+    "reproductiveText": "Educational information about reproductive wellbeing, pregnancy and related health topics.",
+    "patient": "Patient Resources",
+    "patientText": "Helpful educational material, frequently asked questions and guidance for informed conversations.",
+    "read": "Explore Information"
+  },
+  "international": {
+    "eyebrow": "OUR INTERNATIONAL FOCUS",
+    "heading": "Information with an international perspective.",
+    "description": "We are developing dedicated educational information for audiences in the Gulf region, with particular attention to local healthcare regulations and patient information.",
+    "bahrain": "Bahrain",
+    "uae": "United Arab Emirates",
+    "dubai": "Dubai",
+    "qatar": "Qatar",
+    "note": "Country pages provide educational information and do not represent confirmation of local clinical licensing or service availability."
+  },
+  "disclaimer": {
+    "heading": "Important information",
+    "text": "Sarah's Women's Clinic is currently developing its online platform. Healthcare licensing and service authorization processes are ongoing. This website currently provides general educational information only. It does not offer medical diagnosis, prescriptions, treatment, abortion procedures or clinical consultations. Information on this website is not a substitute for advice from a qualified healthcare professional."
+  },
+  "contact": {
+    "eyebrow": "WE ARE HERE TO LISTEN",
+    "heading": "Get in touch with our team.",
+    "description": "For general website and organizational enquiries, you can contact us through WhatsApp or our online enquiry channel.",
+    "whatsapp": "WhatsApp Enquiries",
+    "form": "Website Enquiries",
+    "note": "Please do not send medical records, sensitive personal information or urgent medical concerns through general messaging."
+  },
+  "footer": {
+    "description": "A developing international women's health information platform built around dignity, understanding and responsible education.",
+    "quick": "Quick Links",
+    "information": "Information",
+    "privacy": "Privacy Policy",
+    "disclaimer": "Medical Disclaimer",
+    "copyright": "All rights reserved."
+  }
+}

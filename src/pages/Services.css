@@ -1,0 +1,996 @@
+
+/* =====================================================
+   SARAH'S WOMEN'S CLINIC — SERVICES PAGE
+   Complete responsive stylesheet
+===================================================== */
+
+.swc-services-page {
+  --services-burgundy: #702c43;
+  --services-burgundy-dark: #542033;
+  --services-ivory: #faf7f2;
+  --services-gold: #c6a477;
+  --services-rose: #ead9d9;
+  --services-text: #292525;
+  --services-muted: #766d6f;
+
+  width: 100%;
+  max-width: none;
+  overflow: hidden;
+  background: var(--services-ivory);
+  color: var(--services-text);
+}
+
+.swc-services-page *,
+.swc-services-page *::before,
+.swc-services-page *::after {
+  box-sizing: border-box;
+}
+
+.swc-services-container {
+  width: min(100% - 80px, 1240px);
+  margin-inline: auto;
+}
+
+/* HERO */
+
+.swc-services-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 690px;
+  width: 100%;
+  overflow: hidden;
+  background: #30232a;
+  color: #fff;
+}
+
+.swc-services-hero-image {
+  position: absolute;
+  inset: 0;
+  background-image: url("https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=2000&q=90");
+  background-position: center 38%;
+  background-size: cover;
+  transform: scale(1.02);
+  animation: swcServicesHeroReveal 1.2s ease both;
+}
+
+.swc-services-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(35, 19, 27, 0.92) 0%,
+      rgba(47, 27, 36, 0.82) 42%,
+      rgba(49, 30, 39, 0.34) 100%
+    ),
+    linear-gradient(0deg, rgba(31, 19, 25, 0.34), transparent 55%);
+}
+
+.swc-services-hero-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  animation: swcServicesFadeUp 0.9s ease both;
+}
+
+.swc-services-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #e5c4ce;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+
+.swc-services-eyebrow > span {
+  display: block;
+  width: 34px;
+  height: 1px;
+  background: var(--services-gold);
+}
+
+.swc-services-eyebrow-dark {
+  color: var(--services-burgundy);
+}
+
+.swc-services-hero h1 {
+  max-width: 760px;
+  margin: 27px 0 22px;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(43px, 5.3vw, 72px);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -1.8px;
+}
+
+.swc-services-hero-intro {
+  max-width: 590px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 16px;
+  line-height: 1.95;
+}
+
+.swc-services-hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.swc-services-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 54px;
+  padding: 0 23px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.swc-services-button:hover {
+  transform: translateY(-3px);
+}
+
+.swc-services-button-primary {
+  background: #fff;
+  color: var(--services-burgundy-dark);
+}
+
+.swc-services-button-primary:hover {
+  background: var(--services-rose);
+}
+
+.swc-services-button-outline {
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.swc-services-button-outline:hover {
+  background: #fff;
+  border-color: #fff;
+  color: var(--services-burgundy-dark);
+}
+
+.swc-services-hero-note {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-top: 48px;
+  color: #ead9d9;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+}
+
+.swc-services-hero-note svg {
+  color: #d9b18a;
+  flex-shrink: 0;
+}
+
+.swc-services-hero-index {
+  position: absolute;
+  right: max(40px, calc((100% - 1240px) / 2));
+  bottom: 38px;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+/* INTRODUCTION */
+
+.swc-services-intro {
+  padding: 100px 0 65px;
+  background: var(--services-ivory);
+}
+
+.swc-services-intro-inner {
+  display: grid;
+  grid-template-columns: 0.75fr 1.5fr;
+  align-items: start;
+  gap: 80px;
+}
+
+.swc-services-intro-label {
+  padding-top: 13px;
+}
+
+.swc-services-intro-label span {
+  color: var(--services-burgundy);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.swc-services-intro-label div {
+  width: 55px;
+  height: 2px;
+  margin-top: 17px;
+  background: var(--services-gold);
+}
+
+.swc-services-intro-copy h2 {
+  max-width: 700px;
+  margin-bottom: 20px;
+  color: var(--services-burgundy-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(34px, 4vw, 49px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.swc-services-intro-copy p {
+  max-width: 670px;
+  color: #71676a;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* SERVICE CARDS */
+
+.swc-services-grid-section {
+  padding: 30px 0 110px;
+  background: var(--services-ivory);
+}
+
+.swc-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.swc-service-card {
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(112, 44, 67, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.swc-service-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 20px 50px rgba(63, 35, 44, 0.1);
+}
+
+.swc-service-card-image {
+  position: relative;
+  display: block;
+  height: 245px;
+  overflow: hidden;
+  background: #e9dede;
+}
+
+.swc-service-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.65s ease;
+}
+
+.swc-service-card:hover .swc-service-card-image img {
+  transform: scale(1.07);
+}
+
+.swc-service-card-number {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255,255,255,0.75);
+  border-radius: 50%;
+  background: rgba(40, 24, 32, 0.45);
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 1px;
+  backdrop-filter: blur(8px);
+}
+
+.swc-service-card-icon {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47px;
+  height: 47px;
+  background: #fff;
+  color: var(--services-burgundy);
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.swc-service-card-content {
+  padding: 28px 27px 30px;
+}
+
+.swc-service-card-content h3 {
+  margin: 0 0 13px;
+  color: var(--services-burgundy-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.swc-service-card-content p {
+  min-height: 84px;
+  margin: 0 0 23px;
+  color: #766d6f;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.swc-service-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--services-burgundy);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: gap 0.2s ease;
+}
+
+.swc-service-card-link:hover {
+  gap: 16px;
+}
+
+/* =====================================================
+   MEDICINES & CLINICAL ENQUIRIES — NEW SECTION
+===================================================== */
+
+.swc-clinical-section {
+  padding: 105px 0 110px;
+  background: #fff;
+}
+
+.swc-clinical-heading {
+  max-width: 790px;
+  margin-bottom: 48px;
+}
+
+.swc-clinical-heading h2 {
+  max-width: 740px;
+  margin: 22px 0 18px;
+  color: var(--services-burgundy-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(35px, 4vw, 51px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.swc-clinical-heading > p {
+  max-width: 680px;
+  color: var(--services-muted);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.swc-clinical-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.swc-clinical-card {
+  min-width: 0;
+  overflow: hidden;
+  background: var(--services-ivory);
+  border: 1px solid rgba(112, 44, 67, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.swc-clinical-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(84, 32, 51, 0.1);
+}
+
+.swc-clinical-image {
+  position: relative;
+  height: 215px;
+  overflow: hidden;
+  background: #e9dede;
+}
+
+.swc-clinical-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.swc-clinical-card:hover .swc-clinical-image img {
+  transform: scale(1.06);
+}
+
+.swc-clinical-image > span {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255,255,255,0.75);
+  border-radius: 50%;
+  background: rgba(40, 24, 32, 0.5);
+  color: #fff;
+  font-size: 10px;
+  backdrop-filter: blur(8px);
+}
+
+.swc-clinical-content {
+  padding: 25px 24px 28px;
+}
+
+.swc-clinical-category {
+  margin-bottom: 11px;
+  color: var(--services-burgundy);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.swc-clinical-content h3 {
+  min-height: 58px;
+  margin: 0 0 12px;
+  color: var(--services-burgundy-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.swc-clinical-content > p {
+  min-height: 105px;
+  margin: 0 0 20px;
+  color: var(--services-muted);
+  font-size: 12px;
+  line-height: 1.85;
+}
+
+.swc-clinical-status {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 13px 0;
+  border-top: 1px solid rgba(112, 44, 67, 0.12);
+  color: var(--services-burgundy);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.swc-clinical-status svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.swc-clinical-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  color: var(--services-burgundy);
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: gap 0.2s ease;
+}
+
+.swc-clinical-link:hover {
+  gap: 16px;
+}
+
+.swc-clinical-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 35px;
+  padding: 24px 25px;
+  background: #f0e7e3;
+  border-left: 3px solid var(--services-gold);
+}
+
+.swc-clinical-notice svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--services-burgundy);
+}
+
+.swc-clinical-notice p {
+  margin: 0;
+  color: #756a6d;
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+/* OUR APPROACH */
+
+.swc-services-approach {
+  padding: 105px 0;
+  background: #f0e7e3;
+}
+
+.swc-services-approach-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 90px;
+}
+
+.swc-services-approach-image {
+  position: relative;
+  min-height: 570px;
+}
+
+.swc-services-approach-image > img {
+  display: block;
+  width: 100%;
+  height: 570px;
+  object-fit: cover;
+}
+
+.swc-services-image-caption {
+  position: absolute;
+  right: -25px;
+  bottom: 35px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: calc(100% - 20px);
+  padding: 19px 24px;
+  background: #fff;
+  color: var(--services-burgundy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+}
+
+.swc-services-image-caption svg {
+  flex-shrink: 0;
+}
+
+.swc-services-approach-content h2 {
+  max-width: 540px;
+  margin: 22px 0;
+  color: var(--services-burgundy-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(34px, 4vw, 48px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.swc-services-approach-description {
+  max-width: 550px;
+  margin-bottom: 34px;
+  color: #71676a;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.swc-services-principles {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.swc-services-principle {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.swc-services-principle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: rgba(112, 44, 67, 0.09);
+  color: var(--services-burgundy);
+}
+
+.swc-services-principle h3 {
+  margin: 0 0 5px;
+  color: var(--services-burgundy-dark);
+  font-size: 14px;
+}
+
+.swc-services-principle p {
+  margin: 0;
+  color: #766d6f;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.swc-services-about-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 34px;
+  color: var(--services-burgundy);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* CALL TO ACTION */
+
+.swc-services-cta {
+  padding: 95px 0;
+  background: var(--services-ivory);
+}
+
+.swc-services-cta-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 340px;
+  overflow: hidden;
+  padding: 65px 75px;
+  background:
+    linear-gradient(
+      105deg,
+      rgba(84, 32, 51, 0.98),
+      rgba(112, 44, 67, 0.93)
+    );
+  color: #fff;
+}
+
+.swc-services-cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 680px;
+}
+
+.swc-services-cta-content > span {
+  color: #e8c9d2;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.3px;
+}
+
+.swc-services-cta-content h2 {
+  margin: 18px 0 15px;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(35px, 4vw, 48px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.swc-services-cta-content p {
+  max-width: 590px;
+  color: rgba(255,255,255,0.78);
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.swc-services-cta-button {
+  margin-top: 27px;
+  background: #fff;
+  color: var(--services-burgundy-dark);
+}
+
+.swc-services-cta-button:hover {
+  background: var(--services-rose);
+}
+
+.swc-services-cta-decoration {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255,255,255,0.09);
+  pointer-events: none;
+}
+
+/* DISCLAIMER */
+
+.swc-services-disclaimer {
+  padding: 26px 0;
+  background: #f0e7e3;
+}
+
+.swc-services-disclaimer .swc-services-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 13px;
+  max-width: 1000px;
+}
+
+.swc-services-disclaimer svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--services-burgundy);
+}
+
+.swc-services-disclaimer p {
+  margin: 0;
+  color: #756a6d;
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+/* RTL SUPPORT */
+
+.swc-services-page.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.swc-services-page.rtl .swc-services-hero-overlay {
+  background:
+    linear-gradient(
+      270deg,
+      rgba(35, 19, 27, 0.92) 0%,
+      rgba(47, 27, 36, 0.82) 42%,
+      rgba(49, 30, 39, 0.34) 100%
+    );
+}
+
+.swc-services-page.rtl .swc-services-hero-index {
+  right: auto;
+  left: max(40px, calc((100% - 1240px) / 2));
+}
+
+.swc-services-page.rtl .swc-service-card-number,
+.swc-services-page.rtl .swc-clinical-image > span {
+  left: auto;
+  right: 18px;
+}
+
+.swc-services-page.rtl .swc-service-card-icon {
+  right: auto;
+  left: 18px;
+}
+
+.swc-services-page.rtl .swc-services-image-caption {
+  right: auto;
+  left: -25px;
+}
+
+.swc-services-page.rtl .swc-services-cta-decoration {
+  right: auto;
+  left: 50px;
+}
+
+.swc-services-page.rtl .swc-clinical-notice {
+  border-left: none;
+  border-right: 3px solid var(--services-gold);
+}
+
+/* ANIMATIONS */
+
+@keyframes swcServicesFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes swcServicesHeroReveal {
+  from {
+    transform: scale(1.08);
+  }
+
+  to {
+    transform: scale(1.02);
+  }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+  .swc-services-grid,
+  .swc-clinical-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .swc-services-approach-layout {
+    gap: 55px;
+  }
+
+  .swc-services-intro-inner {
+    gap: 45px;
+  }
+
+  .swc-services-approach-image,
+  .swc-services-approach-image > img {
+    min-height: 480px;
+    height: 480px;
+  }
+}
+
+@media (max-width: 760px) {
+  .swc-services-container {
+    width: calc(100% - 44px);
+  }
+
+  .swc-services-hero {
+    min-height: 650px;
+  }
+
+  .swc-services-hero-overlay {
+    background: rgba(35, 19, 27, 0.76);
+  }
+
+  .swc-services-hero h1 {
+    font-size: clamp(40px, 9vw, 57px);
+  }
+
+  .swc-services-intro {
+    padding: 75px 0 45px;
+  }
+
+  .swc-services-intro-inner {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .swc-services-grid-section {
+    padding-bottom: 75px;
+  }
+
+  .swc-clinical-section {
+    padding: 75px 0;
+  }
+
+  .swc-services-approach {
+    padding: 75px 0;
+  }
+
+  .swc-services-approach-layout {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .swc-services-approach-image,
+  .swc-services-approach-image > img {
+    min-height: 430px;
+    height: 430px;
+  }
+
+  .swc-services-image-caption {
+    right: 12px;
+  }
+
+  .swc-services-page.rtl .swc-services-image-caption {
+    right: auto;
+    left: 12px;
+  }
+
+  .swc-services-cta {
+    padding: 70px 0;
+  }
+
+  .swc-services-cta-card {
+    min-height: 0;
+    padding: 50px 35px;
+  }
+
+  .swc-services-cta-decoration {
+    right: -35px;
+  }
+}
+
+@media (max-width: 520px) {
+  .swc-services-container {
+    width: calc(100% - 36px);
+  }
+
+  .swc-services-hero {
+    min-height: 680px;
+  }
+
+  .swc-services-hero-content {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .swc-services-hero h1 {
+    font-size: 42px;
+    letter-spacing: -1px;
+  }
+
+  .swc-services-hero-intro {
+    font-size: 14px;
+  }
+
+  .swc-services-hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .swc-services-button {
+    width: 100%;
+  }
+
+  .swc-services-hero-note {
+    align-items: flex-start;
+    line-height: 1.8;
+  }
+
+  .swc-services-hero-index {
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .swc-services-page.rtl .swc-services-hero-index {
+    right: auto;
+    left: 20px;
+  }
+
+  .swc-services-grid,
+  .swc-clinical-grid {
+    grid-template-columns: 1fr;
+    gap: 23px;
+  }
+
+  .swc-service-card-image,
+  .swc-clinical-image {
+    height: 245px;
+  }
+
+  .swc-service-card-content p,
+  .swc-clinical-content > p {
+    min-height: 0;
+  }
+
+  .swc-services-approach-image,
+  .swc-services-approach-image > img {
+    min-height: 350px;
+    height: 350px;
+  }
+
+  .swc-services-cta-card {
+    padding: 42px 25px;
+  }
+
+  .swc-services-cta-content h2 {
+    font-size: 36px;
+  }
+
+  .swc-services-disclaimer .swc-services-container {
+    align-items: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .swc-services-page *,
+  .swc-services-page *::before,
+  .swc-services-page *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

@@ -1,0 +1,328 @@
+
+/* =====================================================
+   SARAH'S WOMEN'S CLINIC — FULL WIDTH FOOTER
+===================================================== */
+
+.swc-footer {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  background: #292525;
+  color: #faf7f2;
+  clear: both;
+  box-sizing: border-box;
+}
+
+.swc-footer *,
+.swc-footer *::before,
+.swc-footer *::after {
+  box-sizing: border-box;
+}
+
+/* FULL WIDTH SECTIONS */
+
+.swc-footer-main,
+.swc-footer-disclaimer,
+.swc-footer-bottom {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+/* CENTRED CONTENT WRAPPER */
+
+.swc-footer-container {
+  display: block;
+  width: calc(100% - 80px) !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0;
+}
+
+/* MAIN FOOTER */
+
+.swc-footer-main {
+  padding: 75px 0 65px;
+}
+
+.swc-footer-main > .swc-footer-container {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr 0.85fr 1.2fr;
+  align-items: start;
+  justify-content: center;
+  column-gap: 55px;
+  row-gap: 40px;
+}
+
+/* BRAND */
+
+.swc-footer-brand-column {
+  width: 100%;
+  min-width: 0;
+}
+
+.swc-footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.swc-footer-brand-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #a66d7e;
+  color: #fff;
+}
+
+.swc-footer-brand span:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.swc-footer-brand strong {
+  font-size: 17px;
+  letter-spacing: 1.5px;
+}
+
+.swc-footer-brand small {
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.swc-footer-about {
+  max-width: 320px;
+  margin: 0 0 22px;
+  color: #c6c5c1;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.swc-footer-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #e5b7c4;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* FOOTER COLUMNS */
+
+.swc-footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  width: 100%;
+  min-width: 0;
+}
+
+.swc-footer-column h3 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.swc-footer-column > a,
+.swc-footer-country > a:first-child {
+  color: #c6c5c1;
+  font-size: 13px;
+  line-height: 1.7;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.swc-footer-column > a:hover,
+.swc-footer-country > a:first-child:hover {
+  color: #e5b7c4;
+}
+
+/* COUNTRIES */
+
+.swc-footer-country {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 170px;
+  gap: 12px;
+}
+
+.swc-footer-country > a:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: rgba(166, 109, 126, 0.2);
+  color: #e5b7c4;
+  text-decoration: none;
+}
+
+/* PRIVACY */
+
+.swc-footer-privacy-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 280px;
+  margin-top: 5px;
+  color: #e5b7c4;
+}
+
+.swc-footer-privacy-note svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.swc-footer-privacy-note p {
+  color: #c6c5c1;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* DISCLAIMER */
+
+.swc-footer-disclaimer {
+  padding: 26px 0;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.swc-footer-disclaimer > .swc-footer-container {
+  display: flex;
+  justify-content: center;
+}
+
+.swc-footer-disclaimer p {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  color: #aaa9a5;
+  font-size: 12px;
+  line-height: 1.9;
+  text-align: center;
+}
+
+/* COPYRIGHT */
+
+.swc-footer-bottom {
+  padding: 24px 0;
+}
+
+.swc-footer-bottom > .swc-footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px 35px;
+  text-align: center;
+}
+
+.swc-footer-bottom p {
+  color: #aaa9a5;
+  font-size: 12px;
+}
+
+.swc-footer-bottom-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.swc-footer-bottom-links a {
+  color: #c6c5c1;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/* TABLET */
+
+@media (max-width: 1050px) {
+  .swc-footer-main > .swc-footer-container {
+    max-width: 760px !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 55px;
+    row-gap: 45px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .swc-footer-container {
+    width: calc(100% - 40px) !important;
+  }
+
+  .swc-footer-main {
+    padding: 50px 0;
+  }
+
+  .swc-footer-main > .swc-footer-container {
+    max-width: 460px !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 24px;
+    row-gap: 38px;
+  }
+
+  .swc-footer-brand-column {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .swc-footer-brand {
+    justify-content: center;
+  }
+
+  .swc-footer-about {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swc-footer-column {
+    gap: 12px;
+  }
+
+  .swc-footer-disclaimer {
+    padding: 22px 0;
+  }
+
+  .swc-footer-bottom > .swc-footer-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 380px) {
+  .swc-footer-main > .swc-footer-container {
+    max-width: 300px !important;
+    grid-template-columns: 1fr;
+  }
+
+  .swc-footer-brand-column {
+    grid-column: auto;
+    text-align: left;
+  }
+
+  .swc-footer-brand {
+    justify-content: flex-start;
+  }
+}

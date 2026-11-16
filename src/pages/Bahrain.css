@@ -1,0 +1,917 @@
+
+/* =========================================================
+   SARAH'S WOMEN'S CLINIC
+   BAHRAIN LANDING PAGE
+   ========================================================= */
+
+.swc-bahrain-page {
+  --bahrain-wine: #702c43;
+  --bahrain-dark: #542033;
+  --bahrain-rose: #ead9d9;
+  --bahrain-ivory: #faf7f2;
+  --bahrain-gold: #c6a477;
+  --bahrain-text: #292525;
+  --bahrain-muted: #77716f;
+  --bahrain-border: #e9e1dc;
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  color: var(--bahrain-text);
+  font-family: inherit;
+}
+
+.swc-bahrain-page *,
+.swc-bahrain-page *::before,
+.swc-bahrain-page *::after {
+  box-sizing: border-box;
+}
+
+.swc-bahrain-container {
+  width: min(100% - 80px, 1240px);
+  margin-inline: auto;
+}
+
+.swc-bahrain-page a {
+  text-decoration: none;
+}
+
+/* HERO */
+
+.swc-bahrain-hero {
+  position: relative;
+  display: flex;
+  min-height: 670px;
+  align-items: center;
+  isolation: isolate;
+  background-position: center;
+  background-size: cover;
+}
+
+.swc-bahrain-hero-overlay {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(35, 20, 27, 0.9) 0%,
+      rgba(47, 28, 36, 0.73) 48%,
+      rgba(47, 28, 36, 0.18) 100%
+    );
+}
+
+.swc-bahrain-hero-content {
+  position: relative;
+  z-index: 1;
+  padding-block: 100px 110px;
+  color: #fff;
+}
+
+.swc-bahrain-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 58px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+}
+
+.swc-bahrain-breadcrumb a {
+  color: #fff;
+}
+
+.swc-bahrain-breadcrumb a:hover {
+  color: var(--bahrain-gold);
+}
+
+.swc-bahrain-eyebrow,
+.swc-bahrain-section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--bahrain-wine);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.swc-bahrain-eyebrow {
+  margin-bottom: 22px;
+  color: #e6c79e;
+}
+
+.swc-bahrain-hero h1 {
+  max-width: 800px;
+  margin: 0;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(44px, 5.6vw, 76px);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+}
+
+.swc-bahrain-hero-content > p {
+  max-width: 610px;
+  margin: 25px 0 0;
+  color: rgba(255, 255, 255, 0.83);
+  font-size: 15px;
+  line-height: 1.95;
+}
+
+.swc-bahrain-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-top: 34px;
+}
+
+.swc-bahrain-primary-button,
+.swc-bahrain-secondary-button {
+  display: inline-flex;
+  min-height: 54px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 0 22px;
+  font-size: 11px;
+  font-weight: 800;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.swc-bahrain-primary-button {
+  background: #fff;
+  color: var(--bahrain-dark);
+}
+
+.swc-bahrain-primary-button:hover {
+  background: var(--bahrain-gold);
+  color: #fff;
+}
+
+.swc-bahrain-secondary-button {
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  color: #fff;
+}
+
+.swc-bahrain-secondary-button:hover {
+  background: rgba(255, 255, 255, 0.13);
+}
+
+.swc-bahrain-hero-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 35px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+.swc-bahrain-hero-note svg {
+  color: #e6c79e;
+}
+
+.swc-bahrain-hero-side-label {
+  position: absolute;
+  right: 35px;
+  bottom: 50px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.35em;
+  writing-mode: vertical-rl;
+}
+
+/* INTRO */
+
+.swc-bahrain-intro {
+  padding-block: 115px;
+  background: var(--bahrain-ivory);
+}
+
+.swc-bahrain-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  align-items: center;
+  gap: 95px;
+}
+
+.swc-bahrain-intro-image {
+  position: relative;
+  height: 500px;
+}
+
+.swc-bahrain-intro-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swc-bahrain-image-caption {
+  position: absolute;
+  right: -20px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 23px;
+  background: #fff;
+  color: var(--bahrain-dark);
+  box-shadow: 0 12px 35px rgba(61, 36, 43, 0.1);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.swc-bahrain-image-caption svg {
+  color: var(--bahrain-wine);
+}
+
+.swc-bahrain-intro-copy h2,
+.swc-bahrain-section-heading h2,
+.swc-bahrain-country-copy h2,
+.swc-bahrain-destination-content h2 {
+  margin: 17px 0 20px;
+  color: var(--bahrain-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(36px, 3.7vw, 50px);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.17;
+}
+
+.swc-bahrain-intro-copy > p,
+.swc-bahrain-section-heading > p,
+.swc-bahrain-country-copy > p {
+  color: var(--bahrain-muted);
+  font-size: 13px;
+  line-height: 2;
+}
+
+.swc-bahrain-intro-signature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+  color: var(--bahrain-wine);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  font-style: italic;
+}
+
+/* TOPICS */
+
+.swc-bahrain-topics {
+  padding-block: 110px 120px;
+}
+
+.swc-bahrain-section-heading {
+  max-width: 700px;
+  margin-bottom: 48px;
+}
+
+.swc-bahrain-section-heading h2 {
+  margin-bottom: 14px;
+}
+
+.swc-bahrain-section-heading > p {
+  max-width: 540px;
+  margin: 0;
+}
+
+.swc-bahrain-topic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.swc-bahrain-topic-card {
+  min-width: 0;
+  border: 1px solid var(--bahrain-border);
+  background: #fff;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.swc-bahrain-topic-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 18px 40px rgba(61, 36, 43, 0.09);
+}
+
+.swc-bahrain-topic-image {
+  position: relative;
+  display: block;
+  height: 265px;
+  overflow: hidden;
+  background: var(--bahrain-rose);
+}
+
+.swc-bahrain-topic-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.swc-bahrain-topic-card:hover .swc-bahrain-topic-image img {
+  transform: scale(1.06);
+}
+
+.swc-bahrain-topic-index {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  background: #fff;
+  color: var(--bahrain-dark);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.swc-bahrain-topic-arrow {
+  position: absolute;
+  right: 17px;
+  bottom: 17px;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  background: var(--bahrain-wine);
+  color: #fff;
+}
+
+.swc-bahrain-topic-content {
+  padding: 28px 25px 30px;
+}
+
+.swc-bahrain-topic-icon {
+  display: grid;
+  width: 43px;
+  height: 43px;
+  margin-bottom: 17px;
+  place-items: center;
+  background: var(--bahrain-ivory);
+  color: var(--bahrain-wine);
+}
+
+.swc-bahrain-topic-content h3 {
+  margin: 0 0 12px;
+  color: var(--bahrain-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.swc-bahrain-topic-content p {
+  min-height: 70px;
+  margin: 0 0 22px;
+  color: var(--bahrain-muted);
+  font-size: 12px;
+  line-height: 1.85;
+}
+
+.swc-bahrain-topic-link,
+.swc-bahrain-country-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--bahrain-wine);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+/* COUNTRY INFORMATION */
+
+.swc-bahrain-country {
+  padding-block: 110px;
+  background: var(--bahrain-ivory);
+}
+
+.swc-bahrain-country-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 100px;
+}
+
+.swc-bahrain-country-copy h2 {
+  max-width: 480px;
+}
+
+.swc-bahrain-country-copy > p {
+  max-width: 490px;
+}
+
+.swc-bahrain-country-copy ul {
+  display: grid;
+  gap: 16px;
+  margin: 28px 0 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.swc-bahrain-country-copy li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #5e5557;
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+.swc-bahrain-country-copy li svg {
+  flex: 0 0 auto;
+  color: var(--bahrain-wine);
+}
+
+.swc-bahrain-country-image {
+  position: relative;
+  height: 470px;
+}
+
+.swc-bahrain-country-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swc-bahrain-country-image-card {
+  position: absolute;
+  right: -22px;
+  bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 19px 23px;
+  background: #fff;
+  color: var(--bahrain-dark);
+  box-shadow: 0 12px 35px rgba(61, 36, 43, 0.1);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.swc-bahrain-country-image-card svg {
+  color: var(--bahrain-wine);
+}
+
+/* DESTINATION */
+
+.swc-bahrain-destination {
+  position: relative;
+  display: flex;
+  min-height: 390px;
+  align-items: center;
+  isolation: isolate;
+}
+
+.swc-bahrain-destination-image,
+.swc-bahrain-destination-overlay {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+}
+
+.swc-bahrain-destination-image {
+  background-position: center 55%;
+  background-size: cover;
+}
+
+.swc-bahrain-destination-overlay {
+  background: rgba(45, 26, 34, 0.78);
+}
+
+.swc-bahrain-destination-content {
+  padding-block: 85px;
+  color: #fff;
+}
+
+.swc-bahrain-destination-content .swc-bahrain-section-label {
+  color: #e6c79e;
+}
+
+.swc-bahrain-destination-content h2 {
+  max-width: 700px;
+  color: #fff;
+}
+
+.swc-bahrain-destination-content > p {
+  max-width: 620px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+  line-height: 1.95;
+}
+
+/* NOTE */
+
+.swc-bahrain-note {
+  padding-block: 36px;
+  background: #f3ece8;
+}
+
+.swc-bahrain-note-inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.swc-bahrain-note-icon {
+  display: grid;
+  flex: 0 0 55px;
+  width: 55px;
+  height: 55px;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--bahrain-wine);
+}
+
+.swc-bahrain-note-inner h2 {
+  margin: 0 0 8px;
+  color: var(--bahrain-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.swc-bahrain-note-inner p {
+  max-width: 900px;
+  margin: 0;
+  color: var(--bahrain-muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* CTA */
+
+.swc-bahrain-cta {
+  padding-block: 75px;
+  background: var(--bahrain-dark);
+  color: #fff;
+}
+
+.swc-bahrain-cta-inner {
+  display: grid;
+  grid-template-columns: 65px 1fr auto;
+  align-items: center;
+  gap: 30px;
+}
+
+.swc-bahrain-cta-icon {
+  display: grid;
+  width: 62px;
+  height: 62px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  color: #e6c79e;
+}
+
+.swc-bahrain-cta-copy .swc-bahrain-section-label {
+  color: #e6c79e;
+}
+
+.swc-bahrain-cta-copy h2 {
+  margin: 9px 0;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.swc-bahrain-cta-copy p {
+  max-width: 680px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.swc-bahrain-cta-button {
+  display: inline-flex;
+  min-height: 53px;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  padding: 0 22px;
+  background: #fff;
+  color: var(--bahrain-dark);
+  font-size: 11px;
+  font-weight: 800;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.swc-bahrain-cta-button:hover {
+  background: var(--bahrain-gold);
+  color: #fff;
+}
+
+/* DISCLAIMER */
+
+.swc-bahrain-disclaimer {
+  padding-block: 35px 40px;
+  background: #f8f6f3;
+}
+
+.swc-bahrain-disclaimer-heading {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 10px;
+  color: var(--bahrain-wine);
+}
+
+.swc-bahrain-disclaimer-heading h2 {
+  margin: 0;
+  color: var(--bahrain-dark);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.swc-bahrain-disclaimer > .swc-bahrain-container > p {
+  max-width: 1050px;
+  margin: 0;
+  color: var(--bahrain-muted);
+  font-size: 10px;
+  line-height: 1.9;
+}
+
+/* RTL */
+
+.swc-bahrain-page.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.swc-bahrain-page.rtl .swc-bahrain-hero-overlay {
+  background: linear-gradient(
+    270deg,
+    rgba(35, 20, 27, 0.9) 0%,
+    rgba(47, 28, 36, 0.73) 48%,
+    rgba(47, 28, 36, 0.18) 100%
+  );
+}
+
+.swc-bahrain-page.rtl .swc-bahrain-hero-side-label {
+  right: auto;
+  left: 35px;
+  writing-mode: vertical-lr;
+}
+
+.swc-bahrain-page.rtl .swc-bahrain-topic-index {
+  left: auto;
+  right: 17px;
+}
+
+.swc-bahrain-page.rtl .swc-bahrain-topic-arrow {
+  right: auto;
+  left: 17px;
+}
+
+.swc-bahrain-page.rtl .swc-bahrain-image-caption {
+  right: auto;
+  left: -20px;
+}
+
+.swc-bahrain-page.rtl .swc-bahrain-country-image-card {
+  right: auto;
+  left: -22px;
+}
+
+.swc-bahrain-page.rtl .swc-bahrain-topic-link svg,
+.swc-bahrain-page.rtl .swc-bahrain-country-link svg,
+.swc-bahrain-page.rtl .swc-bahrain-cta-button svg,
+.swc-bahrain-page.rtl .swc-bahrain-primary-button svg,
+.swc-bahrain-page.rtl .swc-bahrain-secondary-button svg {
+  transform: scaleX(-1);
+}
+
+/* TABLET */
+
+@media (max-width: 1050px) {
+  .swc-bahrain-intro-grid,
+  .swc-bahrain-country-grid {
+    gap: 50px;
+  }
+
+  .swc-bahrain-topic-grid {
+    gap: 18px;
+  }
+
+  .swc-bahrain-topic-image {
+    height: 220px;
+  }
+
+  .swc-bahrain-cta-inner {
+    grid-template-columns: 60px 1fr;
+  }
+
+  .swc-bahrain-cta-button {
+    grid-column: 2;
+    justify-self: start;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .swc-bahrain-container {
+    width: min(100% - 38px, 1240px);
+  }
+
+  .swc-bahrain-hero {
+    min-height: 620px;
+    background-position: 60% center;
+  }
+
+  .swc-bahrain-hero-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(35, 20, 27, 0.9),
+      rgba(47, 28, 36, 0.58)
+    );
+  }
+
+  .swc-bahrain-hero-content {
+    padding-block: 75px 95px;
+  }
+
+  .swc-bahrain-breadcrumb {
+    margin-bottom: 45px;
+  }
+
+  .swc-bahrain-hero h1 {
+    font-size: clamp(40px, 10vw, 57px);
+  }
+
+  .swc-bahrain-hero-content > p {
+    font-size: 13px;
+  }
+
+  .swc-bahrain-hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .swc-bahrain-primary-button,
+  .swc-bahrain-secondary-button {
+    width: 100%;
+  }
+
+  .swc-bahrain-hero-side-label {
+    right: 18px;
+    bottom: 25px;
+  }
+
+  .swc-bahrain-intro,
+  .swc-bahrain-topics,
+  .swc-bahrain-country {
+    padding-block: 75px;
+  }
+
+  .swc-bahrain-intro-grid,
+  .swc-bahrain-country-grid {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .swc-bahrain-intro-image {
+    height: 350px;
+    margin-inline: 0 12px;
+  }
+
+  .swc-bahrain-image-caption {
+    right: -12px;
+    bottom: 18px;
+  }
+
+  .swc-bahrain-intro-copy h2,
+  .swc-bahrain-section-heading h2,
+  .swc-bahrain-country-copy h2,
+  .swc-bahrain-destination-content h2 {
+    font-size: 36px;
+  }
+
+  .swc-bahrain-topic-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .swc-bahrain-topic-image {
+    height: 245px;
+  }
+
+  .swc-bahrain-topic-content p {
+    min-height: auto;
+  }
+
+  .swc-bahrain-country-image {
+    height: 340px;
+    margin-inline: 0 12px;
+  }
+
+  .swc-bahrain-country-image-card {
+    right: -12px;
+    bottom: 18px;
+  }
+
+  .swc-bahrain-destination {
+    min-height: 360px;
+  }
+
+  .swc-bahrain-destination-content {
+    padding-block: 70px;
+  }
+
+  .swc-bahrain-note-inner {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .swc-bahrain-note-icon {
+    flex-basis: 45px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .swc-bahrain-note-inner h2 {
+    font-size: 19px;
+    line-height: 1.4;
+  }
+
+  .swc-bahrain-cta {
+    padding-block: 55px;
+  }
+
+  .swc-bahrain-cta-inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .swc-bahrain-cta-copy h2 {
+    font-size: 31px;
+  }
+
+  .swc-bahrain-cta-button {
+    grid-column: auto;
+    justify-self: stretch;
+  }
+
+  .swc-bahrain-page.rtl .swc-bahrain-hero-side-label {
+    left: 18px;
+    right: auto;
+  }
+
+  .swc-bahrain-page.rtl .swc-bahrain-image-caption {
+    left: -12px;
+  }
+
+  .swc-bahrain-page.rtl .swc-bahrain-country-image-card {
+    left: -12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .swc-bahrain-container {
+    width: min(100% - 30px, 1240px);
+  }
+
+  .swc-bahrain-hero h1 {
+    font-size: 39px;
+  }
+
+  .swc-bahrain-intro-copy h2,
+  .swc-bahrain-section-heading h2,
+  .swc-bahrain-country-copy h2,
+  .swc-bahrain-destination-content h2 {
+    font-size: 32px;
+  }
+
+  .swc-bahrain-topic-image {
+    height: 215px;
+  }
+
+  .swc-bahrain-country-image {
+    height: 290px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .swc-bahrain-page *,
+  .swc-bahrain-page *::before,
+  .swc-bahrain-page *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

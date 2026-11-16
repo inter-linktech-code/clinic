@@ -1,0 +1,101 @@
+
+/* =========================================================
+   SARAH'S WOMEN'S CLINIC
+   GLOBAL STYLES
+   ========================================================= */
+
+:root {
+  font-family: "DM Sans", Arial, sans-serif;
+  color: #292525;
+  background: #faf7f2;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  scroll-behavior: smooth;
+
+  --brand-burgundy: #702c43;
+  --brand-burgundy-dark: #542033;
+  --brand-ivory: #faf7f2;
+  --brand-gold: #c6a477;
+  --brand-rose: #ead9d9;
+  --brand-charcoal: #292525;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: "DM Sans", Arial, sans-serif;
+}
+
+button,
+input,
+textarea {
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+img {
+  display: block;
+}
+
+::selection {
+  background: #702c43;
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid #c6a477;
+  outline-offset: 4px;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+[dir="rtl"] body {
+  font-family: "DM Sans", Tahoma, Arial, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

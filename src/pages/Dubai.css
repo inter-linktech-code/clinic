@@ -1,0 +1,943 @@
+
+/* =========================================================
+   SARAH'S WOMEN'S CLINIC
+   DUBAI PAGE
+   ========================================================= */
+
+.swc-dubai-page {
+  --dubai-wine: #702c43;
+  --dubai-dark: #542033;
+  --dubai-cream: #faf7f2;
+  --dubai-gold: #c6a477;
+  --dubai-rose: #ead9d9;
+  --dubai-text: #30272a;
+  --dubai-muted: #776d70;
+
+  width: 100%;
+  overflow: hidden;
+  background: var(--dubai-cream);
+  color: var(--dubai-text);
+}
+
+.swc-dubai-page *,
+.swc-dubai-page *::before,
+.swc-dubai-page *::after {
+  box-sizing: border-box;
+}
+
+.swc-dubai-container {
+  width: min(1160px, calc(100% - 64px));
+  margin-inline: auto;
+}
+
+.swc-dubai-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  color: var(--dubai-wine);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.swc-dubai-eyebrow > span {
+  width: 27px;
+  height: 1px;
+  background: var(--dubai-gold);
+}
+
+/* HERO */
+
+.swc-dubai-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 690px;
+  isolation: isolate;
+  background: #34282b;
+  color: #fff;
+}
+
+.swc-dubai-hero-image,
+.swc-dubai-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.swc-dubai-hero-image {
+  background-position: center 48%;
+  background-size: cover;
+  transform: scale(1.015);
+}
+
+.swc-dubai-hero-overlay {
+  background:
+    linear-gradient(90deg, rgba(29, 17, 23, .88) 0%, rgba(40, 23, 30, .67) 48%, rgba(40, 23, 30, .18) 100%),
+    linear-gradient(0deg, rgba(26, 16, 21, .36), transparent 45%);
+}
+
+.swc-dubai-hero-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.swc-dubai-hero-eyebrow {
+  color: #f0d8c0;
+}
+
+.swc-dubai-hero h1 {
+  max-width: 760px;
+  margin: 26px 0 23px;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(43px, 6vw, 76px);
+  font-weight: 400;
+  letter-spacing: -2.4px;
+  line-height: 1.08;
+}
+
+.swc-dubai-hero-content > p {
+  max-width: 610px;
+  margin: 0;
+  color: rgba(255, 255, 255, .85);
+  font-size: 16px;
+  line-height: 1.95;
+}
+
+.swc-dubai-hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 37px;
+}
+
+.swc-dubai-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 53px;
+  padding: 0 23px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: .3px;
+  text-decoration: none;
+  transition: background .25s ease, color .25s ease, transform .25s ease;
+}
+
+.swc-dubai-button:hover {
+  transform: translateY(-3px);
+}
+
+.swc-dubai-button-light {
+  background: #fff;
+  color: var(--dubai-dark);
+}
+
+.swc-dubai-button-light:hover {
+  background: var(--dubai-gold);
+  color: #24171b;
+}
+
+.swc-dubai-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.swc-dubai-text-link:hover {
+  color: #f0d8c0;
+}
+
+.swc-dubai-hero-caption {
+  position: absolute;
+  right: 32px;
+  bottom: 27px;
+  left: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, .68);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.swc-dubai-hero-caption span:first-child {
+  color: #fff;
+  font-family: Georgia, serif;
+  font-size: 21px;
+  letter-spacing: 1px;
+}
+
+/* INTRODUCTION */
+
+.swc-dubai-intro {
+  padding: 112px 0;
+  background: var(--dubai-cream);
+}
+
+.swc-dubai-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 90px;
+}
+
+.swc-dubai-intro-image-wrap {
+  position: relative;
+  min-height: 490px;
+  padding: 0 28px 28px 0;
+}
+
+.swc-dubai-intro-image-wrap::before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 76%;
+  height: 76%;
+  background: var(--dubai-rose);
+  content: "";
+}
+
+.swc-dubai-intro-image-wrap img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.swc-dubai-image-caption {
+  position: absolute;
+  right: -10px;
+  bottom: 48px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 19px;
+  background: #fff;
+  color: var(--dubai-wine);
+  box-shadow: 0 12px 35px rgba(42, 23, 30, .1);
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.swc-dubai-intro-copy h2,
+.swc-dubai-section-heading h2,
+.swc-dubai-city-copy h2,
+.swc-dubai-values-heading h2 {
+  margin: 18px 0 20px;
+  color: var(--dubai-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(35px, 4vw, 51px);
+  font-weight: 400;
+  letter-spacing: -1.2px;
+  line-height: 1.15;
+}
+
+.swc-dubai-intro-copy > p,
+.swc-dubai-city-copy > p {
+  margin: 0;
+  color: var(--dubai-muted);
+  font-size: 14px;
+  line-height: 2;
+}
+
+.swc-dubai-intro-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 29px;
+  padding: 19px;
+  border-left: 2px solid var(--dubai-gold);
+  background: #f2ebe4;
+  color: var(--dubai-dark);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.swc-dubai-intro-note svg {
+  flex: 0 0 auto;
+  color: var(--dubai-wine);
+}
+
+/* TOPIC CARDS */
+
+.swc-dubai-topics {
+  padding: 105px 0 115px;
+  background: #fff;
+}
+
+.swc-dubai-section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 55px;
+  margin-bottom: 48px;
+}
+
+.swc-dubai-section-heading h2 {
+  max-width: 570px;
+  margin-bottom: 0;
+}
+
+.swc-dubai-section-heading > p {
+  max-width: 365px;
+  margin: 0 0 5px;
+  color: var(--dubai-muted);
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.swc-dubai-topic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.swc-dubai-topic-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #eee7e4;
+  background: #fff;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.swc-dubai-topic-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 20px 45px rgba(67, 37, 48, .09);
+}
+
+.swc-dubai-topic-image {
+  position: relative;
+  height: 255px;
+  overflow: hidden;
+  background: var(--dubai-rose);
+}
+
+.swc-dubai-topic-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .6s ease;
+}
+
+.swc-dubai-topic-card:hover .swc-dubai-topic-image img {
+  transform: scale(1.06);
+}
+
+.swc-dubai-topic-number {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  display: grid;
+  width: 39px;
+  height: 39px;
+  place-items: center;
+  background: #fff;
+  color: var(--dubai-wine);
+  font-family: Georgia, serif;
+  font-size: 14px;
+}
+
+.swc-dubai-topic-content {
+  position: relative;
+  padding: 34px 25px 29px;
+}
+
+.swc-dubai-topic-icon {
+  display: grid;
+  width: 47px;
+  height: 47px;
+  margin-top: -58px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  place-items: center;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  background: var(--dubai-wine);
+  color: #fff;
+  box-sizing: content-box;
+}
+
+.swc-dubai-topic-content h3 {
+  margin: 0 0 12px;
+  color: var(--dubai-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.swc-dubai-topic-content > p {
+  min-height: 92px;
+  margin: 0;
+  color: var(--dubai-muted);
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.swc-dubai-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+  color: var(--dubai-wine);
+  font-size: 11px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.swc-dubai-card-link:hover {
+  color: var(--dubai-gold);
+}
+
+/* DUBAI SECTION */
+
+.swc-dubai-city {
+  padding: 110px 0;
+  background: #f2ebe4;
+}
+
+.swc-dubai-city-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  align-items: center;
+  gap: 85px;
+}
+
+.swc-dubai-city-copy h2 {
+  max-width: 480px;
+}
+
+.swc-dubai-city-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  margin-top: 27px;
+  padding: 17px;
+  border: 1px solid rgba(112, 44, 67, .15);
+  color: #6e5b60;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.swc-dubai-city-note svg {
+  flex: 0 0 auto;
+  color: var(--dubai-wine);
+}
+
+.swc-dubai-city-image {
+  position: relative;
+  min-height: 440px;
+}
+
+.swc-dubai-city-image img {
+  display: block;
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+}
+
+.swc-dubai-city-image-label {
+  position: absolute;
+  right: -18px;
+  bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  max-width: calc(100% - 20px);
+  padding: 16px 20px;
+  background: var(--dubai-dark);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.swc-dubai-city-image-label svg {
+  color: var(--dubai-gold);
+  flex: 0 0 auto;
+}
+
+/* VALUES */
+
+.swc-dubai-values {
+  padding: 105px 0 115px;
+  background: var(--dubai-cream);
+}
+
+.swc-dubai-values-heading {
+  max-width: 680px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.swc-dubai-values-heading h2 {
+  margin-bottom: 0;
+}
+
+.swc-dubai-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.swc-dubai-value-card {
+  position: relative;
+  min-height: 260px;
+  padding: 36px 30px;
+  border: 1px solid #e9ded9;
+  background: #fff;
+}
+
+.swc-dubai-value-number {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: #e9ded9;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 35px;
+}
+
+.swc-dubai-value-icon {
+  display: grid;
+  width: 53px;
+  height: 53px;
+  margin-bottom: 25px;
+  place-items: center;
+  background: #f2e6e5;
+  color: var(--dubai-wine);
+}
+
+.swc-dubai-value-card h3 {
+  margin: 0 0 12px;
+  color: var(--dubai-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.swc-dubai-value-card p {
+  margin: 0;
+  color: var(--dubai-muted);
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+/* CTA */
+
+.swc-dubai-cta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 430px;
+  isolation: isolate;
+  background: #39242c;
+  color: #fff;
+}
+
+.swc-dubai-cta-image,
+.swc-dubai-cta-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.swc-dubai-cta-image {
+  background-image: url("https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=2000&q=85");
+  background-position: center 54%;
+  background-size: cover;
+}
+
+.swc-dubai-cta-overlay {
+  background: linear-gradient(90deg, rgba(57, 28, 41, .94), rgba(57, 28, 41, .72) 60%, rgba(57, 28, 41, .34));
+}
+
+.swc-dubai-cta-content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.swc-dubai-cta-content .swc-dubai-eyebrow {
+  color: #f0d8c0;
+}
+
+.swc-dubai-cta-content h2 {
+  max-width: 650px;
+  margin: 18px 0;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(37px, 5vw, 57px);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.swc-dubai-cta-content > p {
+  max-width: 570px;
+  margin: 0 0 28px;
+  color: rgba(255, 255, 255, .82);
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+/* DISCLAIMER */
+
+.swc-dubai-disclaimer {
+  padding: 42px 0;
+  background: #f0e9e4;
+}
+
+.swc-dubai-disclaimer-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.swc-dubai-disclaimer-icon {
+  display: grid;
+  width: 43px;
+  height: 43px;
+  flex: 0 0 auto;
+  place-items: center;
+  background: #fff;
+  color: var(--dubai-wine);
+}
+
+.swc-dubai-disclaimer-inner h2 {
+  margin: 0 0 9px;
+  color: var(--dubai-dark);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.swc-dubai-disclaimer-inner p {
+  max-width: 1000px;
+  margin: 0;
+  color: #74676b;
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+/* RTL */
+
+.swc-dubai-page.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.swc-dubai-page.rtl .swc-dubai-eyebrow {
+  letter-spacing: 0;
+}
+
+.swc-dubai-page.rtl .swc-dubai-intro-note {
+  border-right: 2px solid var(--dubai-gold);
+  border-left: 0;
+}
+
+.swc-dubai-page.rtl .swc-dubai-topic-number {
+  right: 17px;
+  left: auto;
+}
+
+.swc-dubai-page.rtl .swc-dubai-value-number {
+  right: auto;
+  left: 25px;
+}
+
+.swc-dubai-page.rtl .swc-dubai-city-image-label {
+  right: auto;
+  left: -18px;
+}
+
+.swc-dubai-page.rtl .swc-dubai-hero-overlay {
+  background:
+    linear-gradient(270deg, rgba(29, 17, 23, .88) 0%, rgba(40, 23, 30, .67) 48%, rgba(40, 23, 30, .18) 100%),
+    linear-gradient(0deg, rgba(26, 16, 21, .36), transparent 45%);
+}
+
+.swc-dubai-page.rtl .swc-dubai-cta-overlay {
+  background: linear-gradient(270deg, rgba(57, 28, 41, .94), rgba(57, 28, 41, .72) 60%, rgba(57, 28, 41, .34));
+}
+
+.swc-dubai-page.rtl .swc-dubai-hero-caption {
+  direction: ltr;
+}
+
+.swc-dubai-page.rtl .swc-dubai-card-link,
+.swc-dubai-page.rtl .swc-dubai-button {
+  flex-direction: row-reverse;
+}
+
+.swc-dubai-page.rtl .swc-dubai-text-link {
+  flex-direction: row-reverse;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .swc-dubai-intro-grid,
+  .swc-dubai-city-grid {
+    gap: 45px;
+  }
+
+  .swc-dubai-topic-grid {
+    gap: 16px;
+  }
+
+  .swc-dubai-topic-content {
+    padding-inline: 19px;
+  }
+
+  .swc-dubai-topic-image {
+    height: 220px;
+  }
+}
+
+@media (max-width: 760px) {
+  .swc-dubai-container {
+    width: min(100% - 40px, 560px);
+  }
+
+  .swc-dubai-hero {
+    min-height: 620px;
+  }
+
+  .swc-dubai-hero-image {
+    background-position: 60% center;
+  }
+
+  .swc-dubai-hero-overlay {
+    background: linear-gradient(90deg, rgba(29, 17, 23, .88), rgba(40, 23, 30, .58));
+  }
+
+  .swc-dubai-hero-content {
+    padding-top: 75px;
+    padding-bottom: 95px;
+  }
+
+  .swc-dubai-hero h1 {
+    max-width: 580px;
+    font-size: clamp(40px, 10vw, 59px);
+    letter-spacing: -1.5px;
+  }
+
+  .swc-dubai-hero-content > p {
+    font-size: 14px;
+  }
+
+  .swc-dubai-hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 21px;
+  }
+
+  .swc-dubai-hero-caption {
+    right: 20px;
+    left: 20px;
+    font-size: 8px;
+  }
+
+  .swc-dubai-intro,
+  .swc-dubai-topics,
+  .swc-dubai-city,
+  .swc-dubai-values {
+    padding: 75px 0;
+  }
+
+  .swc-dubai-intro-grid,
+  .swc-dubai-city-grid {
+    grid-template-columns: 1fr;
+    gap: 43px;
+  }
+
+  .swc-dubai-intro-image-wrap {
+    min-height: 380px;
+    max-width: 500px;
+  }
+
+  .swc-dubai-intro-image-wrap img {
+    height: 360px;
+  }
+
+  .swc-dubai-intro-copy h2,
+  .swc-dubai-section-heading h2,
+  .swc-dubai-city-copy h2,
+  .swc-dubai-values-heading h2 {
+    font-size: 39px;
+  }
+
+  .swc-dubai-section-heading {
+    display: block;
+    margin-bottom: 35px;
+  }
+
+  .swc-dubai-section-heading > p {
+    margin-top: 17px;
+  }
+
+  .swc-dubai-topic-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .swc-dubai-topic-card {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+  }
+
+  .swc-dubai-topic-image {
+    height: 100%;
+    min-height: 290px;
+  }
+
+  .swc-dubai-topic-content {
+    padding: 28px 22px;
+  }
+
+  .swc-dubai-topic-icon {
+    margin-top: 0;
+    margin-bottom: 16px;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  .swc-dubai-topic-content > p {
+    min-height: 0;
+  }
+
+  .swc-dubai-city-image,
+  .swc-dubai-city-image img {
+    min-height: 350px;
+    height: 350px;
+  }
+
+  .swc-dubai-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .swc-dubai-value-card {
+    min-height: auto;
+  }
+
+  .swc-dubai-cta {
+    min-height: 420px;
+  }
+
+  .swc-dubai-cta-content h2 {
+    font-size: 42px;
+  }
+
+  .swc-dubai-page.rtl .swc-dubai-hero-overlay {
+    background: linear-gradient(270deg, rgba(29, 17, 23, .88), rgba(40, 23, 30, .58));
+  }
+
+  .swc-dubai-page.rtl .swc-dubai-cta-overlay {
+    background: linear-gradient(270deg, rgba(57, 28, 41, .94), rgba(57, 28, 41, .72));
+  }
+}
+
+@media (max-width: 480px) {
+  .swc-dubai-container {
+    width: calc(100% - 34px);
+  }
+
+  .swc-dubai-hero {
+    min-height: 590px;
+  }
+
+  .swc-dubai-hero h1 {
+    font-size: 39px;
+  }
+
+  .swc-dubai-hero-caption span:last-child {
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+
+  .swc-dubai-intro-image-wrap {
+    min-height: 320px;
+    padding-right: 17px;
+    padding-bottom: 18px;
+  }
+
+  .swc-dubai-intro-image-wrap img {
+    height: 300px;
+  }
+
+  .swc-dubai-image-caption {
+    right: -3px;
+    bottom: 32px;
+    padding: 12px;
+    font-size: 9px;
+  }
+
+  .swc-dubai-intro-copy h2,
+  .swc-dubai-section-heading h2,
+  .swc-dubai-city-copy h2,
+  .swc-dubai-values-heading h2 {
+    font-size: 34px;
+  }
+
+  .swc-dubai-topic-card {
+    display: block;
+  }
+
+  .swc-dubai-topic-image {
+    height: 235px;
+    min-height: 0;
+  }
+
+  .swc-dubai-topic-icon {
+    margin-top: -51px;
+    margin-bottom: 17px;
+    border: 5px solid #fff;
+    box-sizing: content-box;
+  }
+
+  .swc-dubai-city-image,
+  .swc-dubai-city-image img {
+    min-height: 290px;
+    height: 290px;
+  }
+
+  .swc-dubai-city-image-label {
+    right: 0;
+    bottom: 15px;
+    font-size: 9px;
+  }
+
+  .swc-dubai-page.rtl .swc-dubai-city-image-label {
+    right: auto;
+    left: 0;
+  }
+
+  .swc-dubai-cta-content h2 {
+    font-size: 36px;
+  }
+
+  .swc-dubai-disclaimer-inner {
+    gap: 13px;
+  }
+
+  .swc-dubai-disclaimer-icon {
+    width: 36px;
+    height: 36px;
+  }
+}
